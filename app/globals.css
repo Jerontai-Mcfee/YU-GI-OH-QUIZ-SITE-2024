@@ -74,3 +74,9 @@ li {
 .container p {
   padding: 8px 0;
 }
+
+/* logo */
+.logo{
+  max-width: 60%;
+height: 50%;
+}

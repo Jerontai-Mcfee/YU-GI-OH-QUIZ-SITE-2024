@@ -9,13 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "^14.0.4-canary.49",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.3"
+    "react-dom": "^18"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": "next.config.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jerontai-Mcfee/quiz-site.git"

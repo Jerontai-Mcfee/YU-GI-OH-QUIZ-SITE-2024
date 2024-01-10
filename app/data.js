@@ -1,19 +1,16 @@
 export const quiz = {
-    totalQuestions: 5,
+    totalQuestions: 12,
     questions: [
       {
         id: 1,
-        question: "Who is the main character in yu-gi-oh",
+        question: "Who is the main character in Yu-Gi-Oh?",
         answers: ["Pegasus", "Yugi Muto", "Joey Wheeler", "seto-Kaiba"],
         correctAnswer: "Yugi Muto",
       },
       {
         id: 2,
         question: "What is the name of the card game Yugi and his Friends play?",
-        answers: ["YU-GI-OH!!!",
-        "Boss Monsters",
-        "Cards against humanity",
-        "Duel monsters"],
+        answers: ["YU-GI-OH!!!", "Boss Monsters", "Cards against humanity", "Duel monsters"],
 
         correctAnswer: 'Duel monsters',
       },
@@ -26,19 +23,22 @@ export const quiz = {
       {
         id: 4,
         question: "What is the name of Yugi's ace monster?",
-        answers: ["Battle Duelist", "Duel city", "monsters", "Battle city tournament"],
-        correctAnswer: "Battle city tournament",
+        answers: ["Blue eye's white Dragon",
+        "Ash Blossom",
+        "Man- Eater Bug",
+        "Dark Magician"],
+        correctAnswer: "Dark Magician",
       },
       {
         id: 5,
-        question: "What is the name of Yugi's ace monster?",
+        question: "What was Seto Kaiba's little brothers name ?",
         answers: [
-            "Blue eye's white Dragon",
-            "Ash Blossom",
-            "Man- Eater Bug",
-            "Dark Magician"
+            "Rock Lee",
+            "Tears of the kingdom",
+            "Mokuba",
+            "The nerd who lived"
           ],
-        correctAnswer: "Dark Magician",
+        correctAnswer: "Mokuba",
       },
       {
         id: 6,
@@ -53,10 +53,10 @@ export const quiz = {
       },
       {
         id: 7,
-        question: "Who was the first duelist Yu-Gi faced against in Duelist Kingdom?",
+        question: "Who was the first duelist Yugi faced against in Duelist Kingdom?",
         answers: [
-            "joey wheeler",
-            "harpies feather duster",
+            "Joey wheeler",
+            "Harpies feather duster",
             "Weevil Underwood",
             "All of the above"
           ],
@@ -77,11 +77,11 @@ export const quiz = {
         question: "What card is needed to create a Fusion type monster?.",
         answers: [
             "Fusion tunnel",
-            "polymerization",
+            "Polymerization",
             "Fusion Gate",
-            "all of the above"
+            "All of the above"
           ],
-        correctAnswer: "polymerization",
+        correctAnswer: "Polymerization",
       },
       {
         id: 10,
@@ -97,7 +97,7 @@ export const quiz = {
            "Blue-eyes white dragon", 
            "Cyber commander",
             "Ghost Belle"],
-        correctAnswer: "Millinneum Puzzle",
+        correctAnswer: "Cyber commander",
       },
 
       {
