@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import logo from './Assets/Images/yugi.png';
 import Image from 'next/image'
-import Image2 from './Assets/Images/bgojo.jpg';
 import React from 'react';
 import './globals.css';
 import styles from './Home.module.css';
