@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import React from 'react';
 import './globals.css';
-import styles from './Home.module.css';
+import logo from './Assets/Images/yugiohlogo.png'
 
 
 
@@ -15,13 +15,10 @@ function Home() {
       
       <div className="container">
       
-      <Image className={styles.circularLogo}
-      src="/yugi.png" 
+      <Image className='logo'
+      src={logo}
       layout="fixed"
-      width={300}
-      height={300}
-    alt="Logo"
-      
+      alt="Logo"
       />
       
       

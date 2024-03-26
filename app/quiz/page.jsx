@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { quiz } from '../data.js';
 
-const page = () => {
+const Page = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [checked, setChecked] = useState(false);
@@ -37,7 +37,7 @@ const page = () => {
       selectedAnswer
         ? {
             ...prev,
-            score: prev.score + 5,
+            score: prev.score + 1,
             correctAnswers: prev.correctAnswers + 1,
           }
         : {
@@ -48,11 +48,13 @@ const page = () => {
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
     } else {
-      setActiveQuestion(0);
       setShowResult(true);
     }
     setChecked(false);
   };
+
+  // Calculate overall percentage
+  const overallPercentage = (result.correctAnswers / questions.length) * 100;
 
   return (
     <div className='container'>
@@ -92,12 +94,12 @@ const page = () => {
         ) : (
           <div className='quiz-container'>
             <h3>Results</h3>
-            <h3>Overall {(result.score / 0.12) * 100}%</h3>
+            <h3>Overall {overallPercentage.toFixed(2)}%</h3>
             <p>
               Total Questions: <span>{questions.length}</span>
             </p>
             <p>
-              Total Score: <span>{result.score}</span>
+              Total Score: <span>{result.correctAnswers}</span>
             </p>
             <p>
               Correct Answers: <span>{result.correctAnswers}</span>
@@ -113,4 +115,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
